@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>note</title>
+    <link rel="stylesheet" href="note.css">
+</head>
+<body>
+    <header>
+        <h1>MY Notes App</h1>
+    </header>
+    <div id="cnote_container">
+        <form action="">
+            <textarea name="" id="cnotetitle" placeholder="Title"></textarea>
+            <textarea name="" id="cnotetxt" placeholder="Text"></textarea>
+            <button id="Cancel" onclick="cancelnote()">Cancel</button>
+            <button id="Save" onclick="addnote()">Save</button>
+        </form>
+    </div>
+    
+    <div id="listnote_container">
+        <div id="nav-bar">
+            <div><h2>Notes</h2></div>
+            <div><button id="deleteall" onclick="deletelist()">Delete All</button></div>
+        </div>
+        <hr>
+        <div id="notes">
+            <!--<div class="note">
+                <h3 class="note-title"> hello</h3>
+                <p class="note-text">Lorheek</p>
+                <button class="note-btn delete-btn">Delete Note</button>
+                <button class="note-btn edit-btn">Edit Note</button>
+            </div>-->
+        </div>
+    </div>
+    <button id="opennote" onclick="createnote()">+</button>
+    
+
+    <div id="editnote_container">
+        <form action="">
+            <textarea name="" id="editnotetitle" placeholder="Title"></textarea>
+            <textarea name="" id="editnotetxt" placeholder="Text"></textarea>
+            <button id="editCancel" onclick="editcancelnote()">Cancel</button>
+            <button id="editSave" onclick="editaddnote()">Save</button>
+        </form>
+    </div>
+    <script src="note.js"></script>
+</body>
+</html>
